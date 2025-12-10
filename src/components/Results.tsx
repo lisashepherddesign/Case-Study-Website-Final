@@ -325,36 +325,48 @@ export function Results() {
           
           {/* My Experience Section */}
           <div className="bg-white rounded-2xl p-8 md:p-12 mb-16">
-            <div className="prose max-w-none">
-              <h3 className="text-sm uppercase text-indigo-500 mb-4">Statistics</h3>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                According to ChatGPT's analysis of current AI-assisted development trends, most people naturally fall into different "levels" of vibe coding depending on their comfort with technology. The majority start in No-Code (<strong>55%</strong>), using visual tools or AI to build things without touching real code. Around <strong>30%</strong> move into Low-Code, where they begin collaborating with AI and making small edits to the code it generates. A smaller group, about <strong>10%</strong>, uses Agentic tools, letting AI handle entire builds or multi-step tasks automatically. Only <strong>5%</strong> regularly work in CLI-based workflows, since that requires the most technical knowledge and hands-on coding.
-              </p>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                These percentages show that vibe coding is not one single approach — people land wherever they feel most comfortable, and many move between categories as they learn.
-              </p>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="prose max-w-none" style={{ maxWidth: '65ch' }}>
+                <h3 className="text-sm uppercase text-indigo-500 mb-4">Statistics</h3>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  According to ChatGPT's analysis of current AI-assisted development trends, most people naturally fall into different "levels" of vibe coding depending on their comfort with technology. The majority start in No-Code (<strong>55%</strong>), using visual tools or AI to build things without touching real code. Around <strong>30%</strong> move into Low-Code, where they begin collaborating with AI and making small edits to the code it generates. A smaller group, about <strong>10%</strong>, uses Agentic tools, letting AI handle entire builds or multi-step tasks automatically. Only <strong>5%</strong> regularly work in CLI-based workflows, since that requires the most technical knowledge and hands-on coding.
+                </p>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  These percentages show that vibe coding is not one single approach — people land wherever they feel most comfortable, and many move between categories as they learn.
+                </p>
+              </div>
               
-              <h3 className="text-sm uppercase text-indigo-500 mb-4 mt-8">Personal Experience</h3>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                In my experience for this study, I jumped between all four of these a LOT. It wasn't because I was intentionally looking for the differences between them—it was simply necessary as I designed, experimented, and learned how to vibe. In the past, I would ask ChatGPT to help me write some code and then ask it to break the code down for me, explaining what each line meant. In the Java world, that looked like asking "What is a node?", "How do I build a circularly linked list?", or "What is a char vs. a string?". I would describe this as using LLMs (Large Language Models) as a second teacher or study guide. This is an example of no-code, since I wasn't writing anything myself—I was just using the tool to learn how code works. If I were to take its explanation and retype the code line-by-line into a Java environment, that would become full coding.
-              </p>
-              
-              <h3 className="text-sm uppercase text-indigo-500 mb-4 mt-8">No-code, Low-code, Agentic, CLI</h3>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                No-code can also look like asking Figma Make to design something for you or prototyping directly in Figma's design software. Once you take the code out of that software, or start manipulating it without relying on prompts, you're moving into low-code territory.
-              </p>
-              
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Low-code involves interacting with the codebase, even in the smallest ways. This could be dropping an image into the project and asking the machine to place or resize it. You're now part of the outcome, even if the AI writes the code for you. Other examples include adding assets to the assets folder, fixing broken file paths, updating styles, renaming components, or simply following the AI's instructions as it tells you how to modify something.
-              </p>
-              
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Agentic AI is where much of the "vibe coding magic" happens, even if only about 10% of people who vibe code actually use it. Agentic AI involves letting the machine take over multi-step tasks and act almost like a junior developer. You tell it where to put things, what to change, what you want, mixing technical phrases with normal conversation, and it brings your project to life. My favorite example of this is inside Visual Studio Code: you can select a model to assist your build, tell it what you need, and it can go through your folders and files, updating them automatically. Figma Make also does a version of this, but instead of editing files on your computer, it performs its agentic actions within its own software environment.
-              </p>
-              
-              <p className="text-gray-700 leading-relaxed">
-                Lastly, there is CLI. This stands for Command Line Interface, a text-based way of controlling your computer or development environment. Instead of clicking buttons or using a visual app, you type commands into a terminal. You're manually creating, installing, running, and managing things through text commands. It becomes vibe coding when AI guides you through what to type and explains what each command does.
-              </p>
+              <div className="prose max-w-none" style={{ maxWidth: '65ch' }}>
+                <h3 className="text-sm uppercase text-indigo-500 mb-4">Personal Experience</h3>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  In my experience for this study, I jumped between all four of these a LOT. It wasn't because I was intentionally looking for the differences between them—it was simply necessary as I designed, experimented, and learned how to vibe. In the past, I would ask ChatGPT to help me write some code and then ask it to break the code down for me, explaining what each line meant. In the Java world, that looked like asking "What is a node?", "How do I build a circularly linked list?", or "What is a char vs. a string?". I would describe this as using LLMs (Large Language Models) as a second teacher or study guide. This is an example of no-code, since I wasn't writing anything myself—I was just using the tool to learn how code works. If I were to take its explanation and retype the code line-by-line into a Java environment, that would become full coding.
+                </p>
+              </div>
+            </div>
+            
+            <div className="mt-8">
+              <h3 className="text-sm uppercase text-indigo-500 mb-4">No-code, Low-code, Agentic, CLI</h3>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="prose max-w-none" style={{ maxWidth: '65ch' }}>
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    No-code can also look like asking Figma Make to design something for you or prototyping directly in Figma's design software. Once you take the code out of that software, or start manipulating it without relying on prompts, you're moving into low-code territory.
+                  </p>
+                  
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    Low-code involves interacting with the codebase, even in the smallest ways. This could be dropping an image into the project and asking the machine to place or resize it. You're now part of the outcome, even if the AI writes the code for you. Other examples include adding assets to the assets folder, fixing broken file paths, updating styles, renaming components, or simply following the AI's instructions as it tells you how to modify something.
+                  </p>
+                  
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    Agentic AI is where much of the "vibe coding magic" happens, even if only about 10% of people who vibe code actually use it. Agentic AI involves letting the machine take over multi-step tasks and act almost like a junior developer. You tell it where to put things, what to change, what you want, mixing technical phrases with normal conversation, and it brings your project to life. My favorite example of this is inside Visual Studio Code: you can select a model to assist your build, tell it what you need, and it can go through your folders and files, updating them automatically. Figma Make also does a version of this, but instead of editing files on your computer, it performs its agentic actions within its own software environment.
+                  </p>
+                </div>
+                
+                <div className="prose max-w-none" style={{ maxWidth: '65ch' }}>
+                  <p className="text-gray-700 leading-relaxed">
+                    Lastly, there is CLI. This stands for Command Line Interface, a text-based way of controlling your computer or development environment. Instead of clicking buttons or using a visual app, you type commands into a terminal. You're manually creating, installing, running, and managing things through text commands. It becomes vibe coding when AI guides you through what to type and explains what each command does.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
